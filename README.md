@@ -92,26 +92,39 @@ Feature Engineering:
 Libraries to import
 
 import numpy as np
+
 import pandas as pd
+
 from sklearn import preprocessing
+
 from sklearn.impute import SimpleImputer
+
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
+
 from sklearn.decomposition import PCA
+
 from sklearn.preprocessing import PolynomialFeatures
 
-Feature Engineering
+**Feature Engineering:**
 
 Process of selecting, transforming or creating new features from the raw dataset for improving the machine Learning model
 Common Techniques used in Feature Engineering
 
 Feature Selection - Identifying and selecting most relevant features from the dataset - Domain knowledge, statistical methods, feature importance
-Feature Scaling - Ensuring that all the features are on a similar scale to prevent some features from dominating - Standardization, normalization..
+
+Feature Scaling - Ensuring that all the features are on a similar scale to prevent some features from dominating - Standardization, normalization
+
 Feature Transformation - Tranform the feature to make them more suitable for analysis
-Handling Missing Values - Dealing with the missing values - imputation, sophisticated methods; predictive imputations,
-Encoding of the categorical Variables - Converting categorical columns to be processed by Machine Learning Algorithms.
-Creating Interaction Terms - Combining two or more features to form a new feature.
-Feature Aggregation - Aggregating multiple related features into a single feature.
-Dimentionality Reduction - Reduce the number of feature while ensuring that we keep the relevant information- PCA
+
+Handling Missing Values - Dealing with the missing values - imputation, sophisticated methods; predictive imputations
+
+Encoding of the categorical Variables - Converting categorical columns to be processed by Machine Learning Algorithms
+
+Creating Interaction Terms - Combining two or more features to form a new feature
+
+Feature Aggregation - Aggregating multiple related features into a single feature
+
+Dimentionality Reduction - Reduce the number of feature while ensuring that we keep the relevant information - PCA
 
 # Feature Selection
 selected_features = ['LotArea','YearBuilt']
