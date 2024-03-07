@@ -27,9 +27,6 @@ Python Library: Pandas
 #load the data
 data = pd.read_csv('housing_data.csv')
 
-# view the first few rows of my data frame
-data.head()
-
 #get information about the data
 data.info()
 
@@ -79,7 +76,7 @@ Python Library: Matplotlib, Seaborn
 - To understand the correlations and dependencies between various features
 - Utilize techniques like correlation matrices or scatterplot matrices for a comprehensive view
 
-# Correlation Analysis
+Correlation Analysis:
 correlation_matrix = data.corr()
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
 plt.title('Correlation Heatmap')
@@ -90,8 +87,10 @@ Python Library: Pandas, Matplotlib, Seaborn
 
 - Create new features that capture relevant information for pricing analysis
 
-# Feature Engineering
-# import the libraries
+Feature Engineering:
+
+Libraries to import
+
 import numpy as np
 import pandas as pd
 from sklearn import preprocessing
@@ -100,7 +99,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import PolynomialFeatures
 
-**Feature Engineering**
+Feature Engineering
 
 Process of selecting, transforming or creating new features from the raw dataset for improving the machine Learning model
 Common Techniques used in Feature Engineering
