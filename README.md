@@ -43,9 +43,13 @@ Python Library: Matplotlib, Seaborn
 
 #histogram
 plt.hist(data['LotArea'], bins = 5) 
+
 plt.title("histogram of area")
+
 plt.xlabel("LotArea")
+
 plt.ylabel("Range")
+
 plt.show()
 
 A histogram is a graphical representation that displays the distribution of a dataset. It consists of bars where the height of each bar represents the frequency of data within each interval also known as a bin.
@@ -54,19 +58,27 @@ Note: bins = 5, represent the data will be divided in to 5 intervals
 
 #boxplot
 sns.boxplot(x=data['LotArea'])
+
 plt.title('boxplot')
+
 plt.show()
 
 #kernel density estimation
 sns.kdeplot(data['LotArea'], shade = 'True')
+
 plt.title("KDE LotArea")
+
 plt.xlabel("LotArea")
+
 plt.ylabel("Density")
+
 plt.show()
 
 #Violin plot
 sns.violinplot(x=data['LotArea'])
+
 plt.title("Violin Lotarea")
+
 plt.show()
 
 3) Multivariate Analysis:
@@ -78,8 +90,11 @@ Python Library: Matplotlib, Seaborn
 
 Correlation Analysis:
 correlation_matrix = data.corr()
+
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
+
 plt.title('Correlation Heatmap')
+
 plt.show()
 
 4) Feature Engineering:
